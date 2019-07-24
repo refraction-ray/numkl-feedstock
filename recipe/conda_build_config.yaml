@@ -1,0 +1,4 @@
+channel_targets:
+  - refraction-ray main
+python:
+  - 3.6
