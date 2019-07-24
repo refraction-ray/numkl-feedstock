@@ -6,30 +6,38 @@ package:
 source:
   url: https://github.com/refraction-ray/numkl/archive/v{{ version }}.tar.gz
 build:
-  number: 1
+  number: 2
   script: $PYTHON setup.py install --single-version-externally-managed --record=record.txt
   script_env:
     - MKLROOT
 requirements:
   build:
-    - python >=3.6
+    - python 
     - {{ compiler('c') }}
     - setuptools
     - mkl-devel
-    - cython >=0.29
-    - numpy 1.11.*
+    - cython 
+    - numpy 
   host:
-    - python >=3.6
+    - python
     - setuptools
     - mkl-devel
-    - cython >=0.29
-    - numpy 1.11.*
+    - cython 
+    - numpy 
   run:
-    - python >=3.6
+    - python
     - mkl
+    - {{ pin_compatible('numpy') }}
 test:
  imports:
    - numkl
+   - numkl.ev
+   - numkl.eig
 about:
   home: https://github.com/refraction-ray/numkl
   license: MIT
+  summary: A thin cython/python wrapper on some routines from Intel MKL
+
+extra:
+  recipe-maintainers:
+    - refraction-ray

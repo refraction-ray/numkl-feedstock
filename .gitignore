@@ -1,4 +1,5 @@
 *.pyc
 
 build_artifacts
-._R*
+._*
+proxy.cfg
