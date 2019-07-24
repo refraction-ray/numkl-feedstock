@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: 
+Summary: A thin cython/python wrapper on some routines from Intel MKL
 
 
 
@@ -121,4 +121,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@refraction-ray](https://github.com/refraction-ray/)
 
