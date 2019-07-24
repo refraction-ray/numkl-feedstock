@@ -18,16 +18,19 @@ requirements:
     - mkl-devel
     - cython 
     - numpy 
+    - llvm-openmp  # [osx]
   host:
     - python
     - setuptools
     - mkl-devel
     - cython 
     - numpy 
+    - llvm-openmp  # [osx]
   run:
     - python
     - mkl
     - {{ pin_compatible('numpy') }}
+    - llvm-openmp  # [osx]
 test:
  imports:
    - numkl
