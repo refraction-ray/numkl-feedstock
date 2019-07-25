@@ -24,7 +24,7 @@ requirements:
   run:
     - python
     - mkl
-	- mkl-devel   # [osx]
+    - mkl-devel   # [osx]
     - {{ pin_compatible('numpy') }}
     - llvm-openmp  # [osx]
 test:
