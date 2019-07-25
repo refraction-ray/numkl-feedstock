@@ -8,5 +8,5 @@ channels:
   - [refraction-ray, main]
 provider:
   linux: travis
-  osx: travis
+  osx: None
   win: None
