@@ -1,4 +1,4 @@
-{% set version = "0.0.3d2" %}
+{% set version = "0.0.3d3" %}
 
 package:
   name: numkl
