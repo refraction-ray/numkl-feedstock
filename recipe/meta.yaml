@@ -6,7 +6,7 @@ package:
 source:
   url: https://github.com/refraction-ray/numkl/archive/v{{ version }}.tar.gz
 build:
-  number: 3
+  number: 5
   script: $PYTHON setup.py install --single-version-externally-managed --record=record.txt
   script_env:
     - MKLROOT
@@ -24,6 +24,7 @@ requirements:
   run:
     - python
     - mkl
+	- mkl-devel   # [osx]
     - {{ pin_compatible('numpy') }}
     - llvm-openmp  # [osx]
 test:
