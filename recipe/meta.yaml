@@ -1,4 +1,4 @@
-{% set version = "0.0.3d6" %}
+{% set version = "0.0.4" %}
 
 package:
   name: numkl
@@ -6,7 +6,7 @@ package:
 source:
   url: https://github.com/refraction-ray/numkl/archive/v{{ version }}.tar.gz
 build:
-  number: 5
+  number: 1
   script: $PYTHON setup.py install --single-version-externally-managed --record=record.txt
   script_env:
     - MKLROOT
