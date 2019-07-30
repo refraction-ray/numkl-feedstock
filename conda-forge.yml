@@ -10,3 +10,7 @@ provider:
   linux: travis
   osx: None
   win: None
+  linux_ppc64le: None
+  linux_aarch64: None
+azure:
+  force: False
